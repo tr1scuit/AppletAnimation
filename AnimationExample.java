@@ -43,6 +43,10 @@ public class AnimationExample extends Applet {
 			  // crashed or faced an error. Try putting "Thread.sleep(15);" outside of
 			  // try{}catch(){} loop, it will be highlighted red and trying to run it 
 			  // will cause a exception in compile time.
+			  
+			  // This also means you can't really interact with the program with
+			  // user inputs until the thread can resume freely
+			  // (i.e. after the for loop is finished.)
 		  }
 		  catch(Exception e){
 			  // This part of the code should be empty in this case since we
